@@ -9,6 +9,7 @@ public class ConsumerMain {
         User user = new User();
         UserService userService=null;
         user.setName("jmyok");
+        // rpc provider中的getUser方法
         User newUser = userService.getUser(user);
         if (newUser!=null){
             System.out.println("user:"+newUser);
